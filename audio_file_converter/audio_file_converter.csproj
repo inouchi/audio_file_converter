@@ -122,9 +122,7 @@
     <Error Condition="!Exists('..\packages\ILMerge.3.0.41\build\ILMerge.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\ILMerge.3.0.41\build\ILMerge.props'))" />
   </Target>
   <PropertyGroup>
-    <PostBuildEvent>set fname_new=$(TargetName)_merge$(TargetExt)
-if $(ConfigurationName) == Release (
-"C:\Users\81802\Desktop\audio_file_converter\packages\ILMerge.3.0.41\tools\net452¥ILMerge.exe" /wildcards /out:%25fname_new%25 $(TargetFileName) *.dll
-)</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
 </Project>
